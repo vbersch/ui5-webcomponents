@@ -45,7 +45,7 @@ const metadata = {
 	},
 	properties: /** @lends  sap.ui.webcomponents.main.TabContainer.prototype */ {
 		/**
-		 * Determines whether the tabs are in a fixed state that is not
+		 * Determines whether the <code>ui5-tabcontainer</code> is in a fixed state that is not
 		 * expandable/collapsible by user interaction.
 		 *
 		 * @type {Boolean}
@@ -57,7 +57,7 @@ const metadata = {
 		},
 
 		/**
-		 * Determines whether the tab content is collapsed.
+		 * Determines whether the <code>ui5-tab</code> content is collapsed.
 		 *
 		 * @type {Boolean}
 		 * @defaultvalue false
@@ -68,10 +68,11 @@ const metadata = {
 		},
 
 		/**
-		 * Specifies if the overflow select list is displayed.
+		 * Determines if the <code>ui5-tab</code> elements will overflow, when there is no enough space
+		 * and can be seen in a overflow menu by clicking the dropdown arrow.
 		 * <br><br>
-		 * The overflow select list represents a list, where all tab filters are displayed
-		 * so that it's easier for the user to select a specific tab filter.
+		 * The overflow menu represents a list, where all <code>ui5-tab</code> elements are displayed
+		 * so that it's easier for the user to select a specific one.
 		 *
 		 * @type {Boolean}
 		 * @defaultvalue false
@@ -148,6 +149,14 @@ const metadata = {
  * <li><code>ui5-tab</code> - contains all the information on an item (text and icon)</li>
  * <li><code>ui5-tab-separator</code> - used to separate tabs with a vertical line</li>
  * </ul>
+ * <br>
+ *
+ * <h3>Keyboard Handling</h3>
+ * To select any <code>ui5-tab</code> use the <code>Space</code> or <code>Enter</code> keys.
+ * <br>
+ * To move the focus to the previous/next <code>ui5-tab</code> use the
+ * <code>Arrow+Down</code>/<code>Arrow+Left</code> and <code>Arrow+Up</code>/<code>Arrow+Right</code> keys.
+ * <br>
  *
  * <h3>ES6 import</h3>
  *

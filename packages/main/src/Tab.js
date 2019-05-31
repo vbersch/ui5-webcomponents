@@ -30,7 +30,7 @@ const metadata = {
 	properties: /** @lends sap.ui.webcomponents.main.Tab.prototype */ {
 
 		/**
-		 * The text to be displayed for the item.
+		 * Defines the text of the <code>ui5-tab</code> displayed in the tab strip.
 		 * @type {string}
 		 * @defaultvalue: ""
 		 * @public
@@ -40,8 +40,10 @@ const metadata = {
 		},
 
 		/**
-		 * Enabled items can be selected.
-		 * @type {Boolean}
+		 * Defines whether the <code>ui5-tab</code> is disabled.
+		 * <br><br>
+		 * <b>Note:</b> A disabled <code>ui5-tab</code> can`t be selected.
+		 * @type {boolean}
 		 * @defaultvalue false
 		 * @public
 		 */
@@ -50,7 +52,7 @@ const metadata = {
 		},
 
 		/**
-		 * Represents the "additionalText" text, which is displayed in the tab filter.
+		 * Defines the "additionalText" of the <code>ui5-tab</code>, displayed in the tab strip.
 		 * @type {string}
 		 * @defaultvalue: ""
 		 * @public
@@ -60,8 +62,11 @@ const metadata = {
 		},
 
 		/**
-		 * Specifies the icon to be displayed for the tab filter.
+		 * Defines the icon of the <code>ui5-tab</code> displayed in the tab strip. The SAP-icons font provides numerous options.
+		 * <br><br>
+		 * See all the available icons in the <ui5-link target="_blank" href="https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/iconExplorer/webapp/index.html" class="api-table-content-cell-link">Icon Explorer</ui5-link>.
 		 * @type {URI}
+		 * @defaultvalue: ""
 		 * @public
 		 */
 		icon: {
@@ -70,13 +75,10 @@ const metadata = {
 		},
 
 		/**
-		 * Specifies the icon color.
+		 * Defines a semantic color for the <code>ui5-tab</code> icon within the tab strip.
 		 *
-		 * If an icon font is used, the color can be chosen from the icon colors
-		 * (sap.ui.core.IconColor).
-		 * Possible semantic colors are: Neutral, Positive, Critical, Negative.
-		 * Instead of the semantic icon color the brand color can be used, this is named Default.
-		 * Semantic colors and brand colors should not be mixed up inside one IconTabBar.
+		 * Available options are: "Default", "Neutral", "Positive", "Critical" and "Negative".
+		 * <br><b>Note:</b> the resulting color depends on the theme.
 		 * @type {IconColor}
 		 * @defaultvalue "Default"
 		 * @public
@@ -87,9 +89,9 @@ const metadata = {
 		},
 
 		/**
-		 * Specifies if the <code>ui5-tab</code> is selected.
+		 * Defines if the <code>ui5-tab</code> is selected.
 		 *
-		 * @type {Boolean}
+		 * @type {boolean}
 		 * @defaultvalue false
 		 * @public
 		 */
@@ -115,7 +117,7 @@ const metadata = {
  * @class
  * The <code>ui5-tab</code> represents a selectable item inside a <code>ui5-tabcontainer</code>.
  * It defines both the item in the tab strip (top part of the <code>ui5-tabcontainer</code>) and the
- * content that is presented to the user once the tab is selected.
+ * content that is presented to the user once the <code>ui5-tab</code> is selected.
  *
  * @constructor
  * @author SAP SE
