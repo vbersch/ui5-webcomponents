@@ -21,7 +21,7 @@ const metadata = {
 		/**
 		 * Defines the <code>ui5-messagestrip</code> type.
 		 * <br></br>
-		 * <b>Note:</b> Available options are <code>Information"</code>, <code>"Positive"</code>, <code>"Negative"</code>,
+		 * <b>Note:</b> Available options are <code>"Information"</code>, <code>"Positive"</code>, <code>"Warning"</code> and <code>"Negative"</code>,
 		 * and "Warning".
 		 *
 		 * @type {MessageStripType}
@@ -54,7 +54,7 @@ const metadata = {
 		},
 
 		/**
-		 * Defines whether the MessageStrip renders icon in the beginning.
+		 * Defines if the <code>ui5-messagestrip</code> icon is visible.
 		 *
 		 * @type {boolean}
 		 * @defaultvalue false
@@ -65,7 +65,7 @@ const metadata = {
 		},
 
 		/**
-		 * Defines whether the MessageStrip renders close icon.
+		 * Defines if the <code>ui5-messagestrip</code> close button is visible.
 		 *
 		 * @type {boolean}
 		 * @defaultvalue false
@@ -98,7 +98,7 @@ const metadata = {
 
 		/**
 		 * Fired when the close button is pressed either with a
-		 * click/tap or by using the Enter or Space key.
+		 * click/tap or by using the <code>Enter</code> or <code>Space</code> key.
 		 *
 		 * @event
 		 * @public
@@ -113,7 +113,7 @@ const metadata = {
  * <h3 class="comment-api-title">Overview</h3>
  *
  * The <code>ui5-messagestrip</code> component enables the embedding of app-related messages.
- * It displays 4 types of messages, each with corresponding semantic color and icon: Information, Positive, Warning and Negative.
+ * It displays 4 types of messages, each with corresponding semantic color and icon: <code>"Information"</code>, <code>"Positive"</code>, <code>"Warning"</code> and <code>"Negative"</code>.
  * Each message can have a close button, so that it can be removed from the UI if needed.
  *
  * <h3>Usage</h3>
