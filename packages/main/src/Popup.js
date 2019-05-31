@@ -50,8 +50,10 @@ const metadata = {
 		},
 	},
 	properties: /** @lends  sap.ui.webcomponents.main.Popup.prototype */ {
+
 		/**
-		 * Defines the ID of the HTML Element, which will get the initial focus.
+		 * Defines the ID of the HTML Element, which will get the initial focus,
+		 * when the component opens.
 		 *
 		 * @type {string}
 		 * @defaultvalue: ""
@@ -61,19 +63,22 @@ const metadata = {
 			type: String,
 			association: true,
 		},
+
 		/**
 		 * Defines whether the header is hidden.
 		 *
-		 * @type {Boolean}
+		 * @type {boolean}
 		 * @defaultvalue false
 		 * @public
 		 */
 		hideHeader: {
 			type: Boolean,
 		},
+
 		/**
-		 * Defines the header text.
-		 *
+		 * Defines the header text. 
+		 *<br>
+		 * <b>Note:</b> The property would not take any effect, if the <code>header</code> slot is used.
 		 * @type {string}
 		 * @defaultvalue: ""
 		 * @public

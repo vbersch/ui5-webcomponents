@@ -17,13 +17,14 @@ import "./ThemePropertiesProvider.js";
 const metadata = {
 	tag: "ui5-dialog",
 	properties: /** @lends  sap.ui.webcomponents.main.Dialog.prototype */ {
+
 		/**
 		 * Determines whether the <code>ui5-dialog</code> should be stretched to fullscreen.
 		 * <br><br>
 		 * <b>Note:</b> The <code>ui5-dialog</code> will be stretched to aproximetly
 		 * 90% of the viewport.
 		 *
-		 * @type {Boolean}
+		 * @type {boolean}
 		 * @defaultvalue false
 		 * @public
 		 */
@@ -39,7 +40,7 @@ const metadata = {
  * The <code>ui5-dialog</code> component is used to temporarily display some information in a
  * size-limited window in front of the regular app screen.
  * It is used to prompt the user for an action or a confirmation.
- * The code>ui5-dialog</code> interrupts the current app processing as it is the only focused UI element and
+ * The <code>ui5-dialog</code> interrupts the current app processing as it is the only focused UI element and
  * the main screen is dimmed/blocked.
  * The dialog combines concepts known from other technologies where the windows have
  * names such as dialog box, dialog window, pop-up, pop-up window, alert box, or message box.
@@ -54,6 +55,9 @@ const metadata = {
  * <h3>Responsive Behavior</h3>
  * The <code>stretch</code> property can be used to stretch the
  * <code>ui5-dialog</code> on full screen.
+ *
+ * <h3>Keyboard Handling</h3>
+ * The <code>ui5-dialog</code> can be closed with the <code>ESC</code> key.
  *
  * <h3>ES6 Module Import</h3>
  *
